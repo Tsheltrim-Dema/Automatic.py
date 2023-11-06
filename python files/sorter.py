@@ -16,4 +16,5 @@ for file in file_name:
         shutil.move(path + file, path + "pdf files/" + file)
     elif ".jpg" in file and not os.path.exists(path + "image files/" + file):
         shutil.move(path + file, path + "image files/" + file)
-    
+    elif ".py" in file and not os.path.exists(path + "python files/" + file):
+         shutil.move(path + file, path + "python files/" + file)
